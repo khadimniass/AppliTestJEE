@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Les Tests Jstl</title>
+	</head>
+	<body>
+	<%@include file="menu.jsp" %>
+	<c:if test="${50>10 }">
+		C'est toujours vrai <%--Inconvénient pas de condition multiple ! --%>
+	</c:if>
+	<%--Solution des conditions --%>
+	<c:forEach begin="0" end="10" step="2" >
+		<p> Mon messahe </p>
+	</c:forEach>
+	</body>
+</html>

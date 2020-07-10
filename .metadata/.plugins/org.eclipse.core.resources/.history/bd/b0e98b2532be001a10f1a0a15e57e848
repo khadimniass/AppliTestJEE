@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Ma première page</title>
+	</head>
+	<body>
+		<p>Hello word !!!!!!!!!!!!!!!!!</p>
+		<p>
+		    <% 
+            String attribut = (String) request.getAttribute("variable");
+            out.println( attribut );
+            %>
+		</p>
+		<p>
+		<%
+		for(int i=0;i<20;i++){
+			out.println("line number "+i+"<br>");
+		}
+		 %>
+		</p>
+	</body>
+</html>

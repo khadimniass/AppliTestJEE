@@ -1,0 +1,9 @@
+INDEX VERSION 1.4+D:\L3_TDSI_2020\JAVA EE\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1878418324.index
+3271193799.index
+2455173118.index
+253595588.index
+1012905845.index
+3129876376.index
+857663150.index
+3129876376.index

@@ -1,0 +1,26 @@
+package com.octest.beans;
+
+import javax.servlet.http.HttpServletRequest;
+
+public class ConnectionForm {
+private String resulta;
+
+public void verificationIdentifiant(HttpServletRequest request)
+{
+	String login = request.getParameter("login");
+	String pass= request.getParameter("pass");
+	
+	if(pass.equals(login)) {
+		resulta="Bravo vous êtes bien connecté ::-)";
+	}else {
+		resulta = "Désolé mot de pass erroné !!!";
+	}
+}
+public String getResulta() {
+	return resulta;
+}
+
+public void setResulta(String resulta) {
+	this.resulta = resulta;
+}
+}

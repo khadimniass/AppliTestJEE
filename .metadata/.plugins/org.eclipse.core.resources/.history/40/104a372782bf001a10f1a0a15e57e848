@@ -1,0 +1,7 @@
+<ul>
+	<li><a href="/test/Accueil">Accueil</a></li>
+	<li><a href="/test/Test">Test</a></li>
+	<li><a href="/test/Jstl">Jstl</a></li>
+		<li><a href="/test/Formulaire">Jstl</a></li>
+	
+</ul>
