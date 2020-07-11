@@ -9,8 +9,11 @@
 </head>
 <body>
 	<%@include file="menu.jsp" %>
-<%-- <c:if test="${!empty form.resultat}"><p><c:out value="${form.resultat }" /></p></c:if> --%>
+ <c:if test="${!empty form.resultat}"><p><c:out value="${form.resultat }" /></p></c:if>
 
+	<%-- 
+	 <form method="post" action="Formulaire">AfficheForm
+	--%>
 	<form method="post" action="Formulaire">
 	<p>
 	<label for ="log">Login : </label>
@@ -22,7 +25,7 @@
 	<input type="password" name="pass" id="pass" />
 	</p>
 		
-	<input type="submit"/>
+	<input type="submit" value="envoyer"/>
 	</form> 
 </body>
 </html>

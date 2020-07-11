@@ -48,12 +48,14 @@
         <url-pattern>/Formulaire</url-pattern>
    </servlet-mapping>
     
+
     
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
+    
     <jsp-config>
     	<jsp-property-group>
     		<url-pattern>*.jsp</url-pattern>
