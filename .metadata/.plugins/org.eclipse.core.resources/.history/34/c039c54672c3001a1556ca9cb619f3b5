@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Envoyer un fichier</title>
+</head>
+<body>
+<form action="Envfile" enctype="multipart/form-data">
+	<p>
+		<label for="titre">titre du fichier</label>
+		<input type="text" name="titre" id="titre" />
+	</p>
+	
+	<p>
+		<label for="fichier">titre du fichier</label>
+		<input type="file" name="fichier" id="fichier"/>
+	</p>
+
+</form>
+
+</body>
+</html>

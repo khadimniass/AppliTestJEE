@@ -1,0 +1,60 @@
+package com.octest.servelets;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/Envfile")
+public class Envfile extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	
+	 public static final int TAILLE_TAMPON = 10240;
+	 public static final String CHEMIN_FICHIERS = "/test/fichiers/"; // A changer
+       
+    public Envfile() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		this.getServletContext().getRequestDispatcher("/WEB-INF/Envfile.jsp").forward( request, response );	
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// On récupère le champ description comme d'habitude
+        String titre = request.getParameter("titre");
+        request.setAttribute("titre", titre );
+        
+        // On récupère le champ du fichier
+        Part part = request.getPart("fichier");
+            
+        // On vérifie qu'on a bien reçu un fichier
+        String nomFichier = getNomFichier(part);
+
+        // Si on a bien un fichier
+        
+        
+        // Si on a bien un fichier
+        if (nomFichier != null && !nomFichier.isEmpty()) {
+            String nomChamp = part.getName();
+            // Corrige un bug du fonctionnement d'Internet Explorer
+             nomFichier = nomFichier.substring(nomFichier.lastIndexOf('/') + 1)
+                    .substring(nomFichier.lastIndexOf('\\') + 1);
+
+            // On écrit définitivement le fichier sur le disque
+            ecrireFichier(part, nomFichier, CHEMIN_FICHIERS);
+
+            request.setAttribute(nomChamp, nomFichier);
+        }
+
+        this.getServletContext().getRequestDispatcher("/WEB-INF/Envfile.jsp").forward(request, response);
+    }
+
+
+		
+	}
+
+}

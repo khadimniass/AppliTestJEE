@@ -47,6 +47,24 @@
         <servlet-name>Formulaire</servlet-name>
         <url-pattern>/Formulaire</url-pattern>
    </servlet-mapping>
+   
+      <servlet>
+        <servlet-name>Envfile</servlet-name>
+        <servlet-class>com.octest.servelets.Envfile</servlet-class>
+        
+        <!-- configuration pour envoyer des données de formulaires -->
+        <multipart-config>
+            <location>D:/L3_TDSI_2020/JAVA EE/test/EmplacementFileTmp</location> <!-- Emplace temporaire des fichiers -->
+            <max-file-size>10485760</max-file-size> <!-- 10 Mo -->
+            <max-request-size>52428800</max-request-size> <!-- 5 x 10 Mo -->
+            <file-size-threshold>1048576</file-size-threshold> <!-- 1 Mo -->
+        </multipart-config>
+   </servlet>
+    
+   <servlet-mapping>
+        <servlet-name>Envfile</servlet-name>
+        <url-pattern>/Envfile</url-pattern>
+   </servlet-mapping>
     
 
     

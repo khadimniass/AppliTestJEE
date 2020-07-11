@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>jstl</artifactId>
+    <version>1.2</version>
+</dependency>
+
+    <servlet>
+        <servlet-name>Test</servlet-name>
+        <servlet-class>com.octest.servelets.Test</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Test</servlet-name>
+        <url-pattern>/Test</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Accueil</servlet-name>
+        <servlet-class>com.octest.servelets.Accueil</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Accueil</servlet-name>
+        <url-pattern>/Accueil</url-pattern>
+    </servlet-mapping>    
+    
+   <servlet>
+        <servlet-name>Jstl</servlet-name>
+        <servlet-class>com.octest.servelets.Jstl</servlet-class>
+   </servlet>
+    
+   <servlet-mapping>
+        <servlet-name>Jstl</servlet-name>
+        <url-pattern>/Jstl</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+        <servlet-name>Formulaire</servlet-name>
+        <servlet-class>com.octest.servelets.Formulaire</servlet-class>
+   </servlet>
+    
+   <servlet-mapping>
+        <servlet-name>Formulaire</servlet-name>
+        <url-pattern>/Formulaire</url-pattern>
+   </servlet-mapping>
+   
+      <servlet>
+        <servlet-name>Envfile</servlet-name>
+        <servlet-class>com.octest.servelets.Envfile</servlet-class>
+        
+        <!-- configuration pour envoyer des données de formulaires -->
+        <multipart-config>
+            <location>/test/EmplacementGropFile/</location> <!-- Emplace temporaire des fichiers -->
+            <max-file-size>10485760</max-file-size> <!-- 10 Mo -->
+            <max-request-size>52428800</max-request-size> <!-- 5 x 10 Mo -->
+            <file-size-threshold>1048576</file-size-threshold> <!-- 1 Mo -->
+        </multipart-config>
+   </servlet>
+    
+   <servlet-mapping>
+        <servlet-name>Envfile</servlet-name>
+        <url-pattern>/Envfile</url-pattern>
+   </servlet-mapping>
+    
+
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    <jsp-config>
+    	<jsp-property-group>
+    		<url-pattern>*.jsp</url-pattern>
+    		<include-prelude>/ZEB-INF/taglib.jsp</include-prelude>
+    	</jsp-property-group>
+    </jsp-config>
+    
+    
+</web-app>
+</element>
