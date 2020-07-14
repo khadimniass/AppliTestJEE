@@ -4,4 +4,5 @@
 	<li><a href="/test/Jstl">Jstl</a></li>
 	<li><a href="/test/Formulaire">Formulaire</a></li>
 	<li><a href="/test/Envfile">Envoyer fichier</a></li>
+	<li><a href="/test/Session">Les Sessions</a></li>
 </ul>
