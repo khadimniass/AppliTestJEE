@@ -65,31 +65,42 @@
 	        <servlet-name>Envfile</servlet-name>
 	        <url-pattern>/Envfile</url-pattern>
 	   </servlet-mapping>
-	    
-	
-	    
+	    	 
+	    	    
 	    <servlet>
 	        <servlet-name>Session</servlet-name>
 	        <servlet-class>com.octest.servelets.Session</servlet-class>
 	   </servlet>
 	    
 	   <servlet-mapping>
-	        <servlet-name>Session</servlet-name>
-	        <url-pattern>/Session</url-pattern>
+	        <servlet-name>Cookie</servlet-name>
+	        <url-pattern>/Cookie</url-pattern>
 	   </servlet-mapping>
+	   
+	    <servlet>
+	        <servlet-name>Cook</servlet-name>
+	        <servlet-class>com.octest.servelets.Cook</servlet-class>
+	   </servlet>
+	    
+	   <servlet-mapping>
+	        <servlet-name>Cook</servlet-name>
+	        <url-pattern>/Cook</url-pattern>
+	   </servlet-mapping>	   
+	   
+	   
+	   
+	   
+	   
 	    <session-config>
 	        <session-timeout>
 	            30
 	        </session-timeout>
 	    </session-config>
-	    
 	    <jsp-config>
 	    	<jsp-property-group>
 	    		<url-pattern>*.jsp</url-pattern>
 	    		<include-prelude>/ZEB-INF/taglib.jsp</include-prelude>
 	    	</jsp-property-group>
 	    </jsp-config>
-	    
-	    
 	</web-app>
 </element>
