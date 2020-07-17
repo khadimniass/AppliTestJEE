@@ -87,7 +87,15 @@
 	        <url-pattern>/Cook</url-pattern>
 	   </servlet-mapping>	   
 	   
-	   
+	    <servlet>
+	        <servlet-name>DB</servlet-name>
+	        <servlet-class>com.octest.servelets.DB</servlet-class>
+	   </servlet>
+	    
+	   <servlet-mapping>
+	        <servlet-name>DB</servlet-name>
+	        <url-pattern>/DB</url-pattern>
+	   </servlet-mapping>	   
 	   
 	   
 	   

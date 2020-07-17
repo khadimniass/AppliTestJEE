@@ -6,4 +6,5 @@
 	<li><a href="/test/Envfile">Envoyer fichier</a></li>
 	<li><a href="/test/Session">Les Sessions</a></li>
 	<li><a href="/test/Cook">Les Cookies</a></li>
+	<li><a href="/test/DB">Base de Données</a></li>
 </ul>
