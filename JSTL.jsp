@@ -8,7 +8,7 @@ cookies :C'est une information stockée dans l'ordinateur de l'utilisateur.
 	De quel type de faille web la balise <c:out /> nous prémunit-elle ? -->La faille XSS
 Quelle balise JSTL permet de faire une boucle sur un array ? --> <c:forEach>
 Que peut-on trouver dans la variable de statut (définie grâce à l'attribut varStatus) d'une boucle JSTL ?-->Le nombre d'éléments dans le tableau
-************************Les bases de données****************************
+**********************************Les bases de données**********************************
 mysql> create database javaee default character set utf8 collate utf8_general_ci;
 L'usage comporte 4 étapes : 
 	-Chargement du driver: Pour que l'application communique avec l'application;
