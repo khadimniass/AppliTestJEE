@@ -15,3 +15,7 @@ L'usage comporte 4 étapes :
 	-Connextion à la base de données(address,login,mot de passe...);
 	-Exécution de la requète
 	-Récupération des données(Parcourir, et afficher les résultats....);
+**********************************DAO**********************************
+						Data Access Object
+-C'est une extension du model MVC
+-C'est une intermédiaire entre le modèle et le system de stockage
