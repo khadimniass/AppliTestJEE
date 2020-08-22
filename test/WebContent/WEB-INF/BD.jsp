@@ -16,7 +16,7 @@
         </p>
         <p>
             <label for="prenom">Prénom : </label>
-            <input type="text" name="prenom" id="prenom" />
+            <input type="text" name="prenom" id="prenom" requere/>
         </p>
         
         <input type="submit" value="Terminer"/>

@@ -95,6 +95,27 @@
 	   <servlet-mapping>
 	        <servlet-name>DB</servlet-name>
 	        <url-pattern>/DB</url-pattern>
+	   </servlet-mapping>	
+	   
+	   
+	   <servlet>
+	        <servlet-name>Login</servlet-name>
+	        <servlet-class>com.octest.servelets.Login</servlet-class>
+	   </servlet>
+	    
+	   <servlet-mapping>
+	        <servlet-name>Login</servlet-name>
+	        <url-pattern>/Login</url-pattern>
+	   </servlet-mapping>	
+	   
+	   	   <servlet>
+	        <servlet-name>Register</servlet-name>
+	        <servlet-class>com.octest.servelets.Register</servlet-class>
+	   </servlet>
+	    
+	   <servlet-mapping>
+	        <servlet-name>Register</servlet-name>
+	        <url-pattern>/Register</url-pattern>
 	   </servlet-mapping>	   
 	   
 	    <session-config>

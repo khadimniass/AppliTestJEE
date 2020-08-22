@@ -1,9 +1,0 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<ul>
-	<li>Page 1</li>
-	<li>Page 2</li>
-	<li>Page 3</li>
-	<li>Page 4</li>
-	<li>Page 5</li>
-</ul>

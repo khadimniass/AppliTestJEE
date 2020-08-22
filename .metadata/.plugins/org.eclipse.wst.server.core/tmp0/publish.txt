@@ -1,3 +1,6 @@
 #Tomcat publish data
-#Wed Jul 22 17:17:19 GMT 2020
+#Sat Aug 22 10:58:23 GMT 2020
 org.eclipse.jst.jee.server\:test=C\:\\tomcat7\\apache-tomcat-7.0.103\\wtpwebapps\\test
+org.eclipse.jst.jee.server\:location=C\:\\tomcat7\\apache-tomcat-7.0.103\\wtpwebapps\\location
+org.eclipse.jst.jee.server\:registration=C\:\\tomcat7\\apache-tomcat-7.0.103\\wtpwebapps\\registration
+org.eclipse.jst.jee.server\:LoginRegister=C\:\\tomcat7\\apache-tomcat-7.0.103\\wtpwebapps\\LoginRegister

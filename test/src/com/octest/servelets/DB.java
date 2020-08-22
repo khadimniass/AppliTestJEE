@@ -21,7 +21,6 @@ public class DB extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Noms tableNoms= new Noms();
 		request.setAttribute("utilisateurs", tableNoms.recupererUtilisateurs());
-		
 		this.getServletContext().getRequestDispatcher( "/WEB-INF/BD.jsp" ).forward( request, response );
 	}
 
